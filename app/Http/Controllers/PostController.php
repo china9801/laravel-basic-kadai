@@ -22,7 +22,7 @@ class PostController extends Controller
         // フォームの入力内容をもとに、テーブルにデータを追加する
         $post = new Post();
         $post->title = $request->input('title');
-        $post->content = $request->input('contet');
+        $post->content = $request->input('content');
         $post->save();
 
         // リダイレクトさせる
